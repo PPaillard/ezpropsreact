@@ -1,9 +1,9 @@
-// je récupère un "contenant", un objet dans lequel vont se trouver mes propriétés (props)
-const Article = (container) => {
+// je récupère un "contenant", que je destructure à l'entrée via ses propriétés (props)
+const Article = ({ title, content }) => {
   return (
     <div>
-      <h1>{container.title}</h1>
-      <div>{container.content}</div>
+      <h1>{title}</h1>
+      <div>{content}</div>
     </div>
   );
 };
